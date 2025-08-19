@@ -158,7 +158,6 @@
             },
         },
         currentTheme: "Classic Autobot",
-        users = {},
     }
 
     const getCurrentTheme = () => CONFIG.THEMES[CONFIG.currentTheme]
@@ -4676,12 +4675,16 @@
         }
     }
 
-    function addUser(name, id, cookies) {
-        users.push({
-            name,
-            id,
-            cookies
-        })
+    let users = {
+        name: [],
+        id: [],
+        cookies: []
+    };
+
+    function addAccount(name, id, cookie) {
+        users.name.push(name);
+        users.id.push(id);
+        users.cookies.push(cookie);
     }
 
     function saveUser() {
