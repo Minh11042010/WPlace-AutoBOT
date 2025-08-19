@@ -158,7 +158,7 @@
             },
         },
         currentTheme: "Classic Autobot",
-        users = {}
+        users = {},
     }
 
     const getCurrentTheme = () => CONFIG.THEMES[CONFIG.currentTheme]
