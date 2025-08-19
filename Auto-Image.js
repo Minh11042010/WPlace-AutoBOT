@@ -1,5 +1,4 @@
-; (async () => {
-    // CONFIGURATION CONSTANTS
+
     const CONFIG = {
         COOLDOWN_DEFAULT: 31000,
         TRANSPARENCY_THRESHOLD: 100,
@@ -4692,4 +4691,3 @@
     }
 
     createUI()
-})()
